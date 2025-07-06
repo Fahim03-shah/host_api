@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Service</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+    
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">SkyAir</h1>
+            <div class="space-x-6">
+                <a href="#home" class="hover:text-gray-200">Home</a>
+                <a href="#flights" class="hover:text-gray-200">Flights</a>
+                <a href="#book" class="hover:text-gray-200">Book Ticket</a>
+                <a href="#contact" class="hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Fly With Comfort and Safety</h2>
+            <p class="text-lg mb-6">Book your flight with SkyAir and travel across the globe in comfort.</p>
+            <a href="#flights" class="bg-yellow-500 text-black py-3 px-6 rounded-full text-lg hover:bg-yellow-400 transition">Explore Flights</a>
+        </div>
+    </section>
+
+
+    <section id="airplane-service" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Airplane Service</h2>
+            <img src="Image/airplane 2.jpg" alt="Airplane Service" class="w-full h-auto mb-6 rounded-lg shadow-lg">
+            <p class="text-lg">SkyAir provides world-class airplane services with a focus on comfort, safety, and efficiency.</p>
+        </div>
+    </section>
+
+    
+    <section id="flights" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Flights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src=Image/newyor_pic.jpg alt="New York City" class="w-full h-48 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Flight A</h3>
+                <p><strong>Departure:</strong> 09:00 AM</p>
+                <p><strong>Arrival:</strong> 01:00 PM</p>
+                <p><strong>Route:</strong> New York - London</p>
+                <a href="#book" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Book Ticket</a>
+            </div>
+
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src=Image/London_pic.jpg alt="London City" class="w-full h-48 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Flight B</h3>
+                <p><strong>Departure:</strong> 11:00 AM</p>
+                <p><strong>Arrival:</strong> 03:00 PM</p>
+                <p><strong>Route:</strong> London - Paris</p>
+                <a href="#book" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Book Ticket</a>
+            </div>
+
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src=Image/paris_pic.jpg alt="Paris City" class="w-full h-48 object-cover mb-4 rounded-lg">
+                <h3 class="text-2xl font-semibold mb-4">Flight C</h3>
+                <p><strong>Departure:</strong> 02:00 PM</p>
+                <p><strong>Arrival:</strong> 06:00 PM</p>
+                <p><strong>Route:</strong> Paris - Tokyo</p>
+                <a href="#book" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Book Ticket</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="book" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Book Your Flight</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <label for="name" class="block text-left mb-2">Full Name</label>
+                <input type="text" id="name" name="name" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
+
+                <label for="flight" class="block text-left mb-2">Choose Flight</label>
+                <select id="flight" name="flight" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                    <option value="flightA">Flight A - New York to London</option>
+                    <option value="flightB">Flight B - London to Paris</option>
+                    <option value="flightC">Flight C - Paris to Tokyo</option>
+                </select>
+
+                <label for="date" class="block text-left mb-2">Travel Date</label>
+                <input type="date" id="date" name="date" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
+
+                <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-500 transition">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <label for="email" class="block text-left mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
+
+                <label for="message" class="block text-left mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-3 mb-4 border border-gray-300 rounded" required></textarea>
+
+                <button type="submit" class="bg-yellow-500 text-black py-3 px-6 rounded-full text-lg hover:bg-yellow-400 transition">Send Message</button>
+            </form>
+            <div class="mt-8">
+                <a href="https://facebook.com" class="text-white hover:text-gray-200 mx-4"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com" class="text-white hover:text-gray-200 mx-4"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://instagram.com" class="text-white hover:text-gray-200 mx-4"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://linkedin.com" class="text-white hover:text-gray-200 mx-4"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-blue-600 text-white py-6 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 SkyAir. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
